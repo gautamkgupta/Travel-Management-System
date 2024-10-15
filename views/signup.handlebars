@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Sign Up</title>
+    <link rel="stylesheet" href="/static/css/signup.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Sign Up</h2>
+
+        <form action="./signup" method="post" id="signup">
+
+            <label for="name">Enter The Name:</label>
+            <input type="text" minlength="5" maxlength="50" name="name" id="name" placeholder="example" required>
+
+            <label for="email">Enter The Email:</label>
+            <input type="text" name="email" id="email" placeholder="example@gmail.com" required>
+
+            <label for="phone">Enter The Phone Number:</label>
+            <input type="text" maxlength="10" name="phone" id="phone" placeholder="1234567890" required>
+
+            <label for="password">Enter The Password:</label>
+            <input type="password" minlength="8" maxlength="15" name="password" id="password" required>
+
+            <label for="password">Enter The Confirm Password:</label>
+            <input type="password" minlength="8" maxlength="15" name="cpassword" id="cpassword" required>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

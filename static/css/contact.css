@@ -1,0 +1,8 @@
+body {
+    background: rgb(179, 169, 169);
+}
+
+#contact-section,
+#footer {
+    display: none;
+}

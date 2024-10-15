@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body>
+
+    {{!-- main Body Started here --}}
+    {{{body}}}
+
+    <section class="Quote" id="contact-section">
+        <div class="form-container no-right-margin">
+            <h2 class="heading-4">Request a Quote</h2>
+            <div class="generator-install-form w-form contact-form">
+                <form id="wf-form-Generator-Install" name="wf-form-Generator-Install" data-name="Generator Install"
+                    action="/main" method="post" class="form-grid-vertical">
+                    <div class="labelled-input">
+                        <label for="Name-3" class="field-label">Your Name</label>
+                        <input type="text" class="form-input w-input" maxlength="256" name="Name" data-name="Name"
+                            placeholder="" id="Name" required="">
+                    </div>
+                    <div class="labelled-input">
+                        <label for="Email-3" class="field-label">Email</label>
+                        <input type="email" class="form-input w-input" maxlength="256" name="Email" data-name="Email"
+                            placeholder="" id="Email" required="">
+                    </div>
+                    <div class="labelled-input">
+                        <label for="Phone" class="field-label">Phone</label>
+                        <input type="tel" class="form-input w-input" maxlength="256" name="Phone" data-name="Phone"
+                            placeholder="" id="Phone">
+                    </div>
+                    <div class="labelled-input">
+                        <label for="Message" class="field-label">Message</label>
+                        {{!-- <input type="text" class="form-input-long w-input" maxlength="256" name="Message"
+                            data-name="Message" placeholder="" id="Message"> --}}
+                        <textarea class="form-input-long w-input" maxlength="256" name="Message" data-name="Message"
+                            placeholder="" id="Message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="checkBox">
+                        <div class="button">
+                            <button class="btn">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="foot-footer">
+            <div class="container-fluid foot">
+                <a class="logo logo-footer" href="#">
+                    <img src="/static/img/logo9.jpg" alt="">
+                </a>
+            </div>
+            <a href="/">
+                <h2>Travel<span> Agency </span></h2>
+            </a>
+            <nav class="footer-navbar">
+                <ul>
+                    <li><a href="./home">Home</a></li>
+                    <li><a href="./about">About</a></li>
+                    <li><a href="./contact">Contact</a></li>
+                    <li><a href="./career">Careers</a></li>
+                </ul>
+            </nav>
+            <p>The contents of this webpage are Copyright &copy; 2021 solarzone@gmail.com | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
